@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hyperlink</title>
+	<!-- Include the jQuery library -->	
+	<script src="jquery-3.0.0.min.js" ></script>
+	<style type="text/css">
+		#hyperlink{
+			margin-left: 750px;
+		}
+		a:link{
+			text-decoration: none;
+			background-color: #FF7133;
+			padding: 20px;
+		}
+		a:hover{
+			background-color:#FF4C33;
+		}
+		h1{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+<h1>Hyperlink and the text of an existing link has been changed</h1>
+<a id="hyperlink" href="http://www.ndtv.com">Business updates</a>
+
+<script>
+$(document).ready(function()
+{
+	// to change hyperlink 
+	$('#hyperlink').attr('href', 'http://www.cricbuzz.com');
+	// to change text 
+	$('#hyperlink').text("Cricket updates");
+})
+</script>
+</body>
+</html>
